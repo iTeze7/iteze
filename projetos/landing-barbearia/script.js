@@ -1,4 +1,3 @@
-// ===== Initialize Lucide Icons =====
 document.addEventListener('DOMContentLoaded', function() {
   lucide.createIcons();
   
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initSmoothScroll();
 });
 
-// ===== Header Scroll Effect =====
 function initHeader() {
   const header = document.getElementById('header');
   
@@ -20,10 +18,9 @@ function initHeader() {
   }
   
   window.addEventListener('scroll', handleScroll);
-  handleScroll(); // Check initial state
+  handleScroll(); 
 }
 
-// ===== Mobile Menu Toggle =====
 function initMobileMenu() {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -35,7 +32,6 @@ function initMobileMenu() {
     isOpen = !isOpen;
     mobileMenu.classList.toggle('active', isOpen);
     
-    // Update icon
     const icon = mobileMenuBtn.querySelector('i');
     icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
     lucide.createIcons();
@@ -52,12 +48,10 @@ function initMobileMenu() {
   
   mobileMenuBtn.addEventListener('click', toggleMenu);
   
-  // Close menu when clicking on nav links
   mobileNavLinks.forEach(link => {
     link.addEventListener('click', closeMenu);
   });
-  
-  // Close menu on resize to desktop
+
   window.addEventListener('resize', function() {
     if (window.innerWidth >= 768) {
       closeMenu();
@@ -65,7 +59,6 @@ function initMobileMenu() {
   });
 }
 
-// ===== Smooth Scroll for Anchor Links =====
 function initSmoothScroll() {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   
@@ -92,7 +85,6 @@ function initSmoothScroll() {
   });
 }
 
-// ===== Intersection Observer for Animations =====
 function initScrollAnimations() {
   const animatedElements = document.querySelectorAll('.benefit-card, .gallery-item');
   
@@ -116,5 +108,4 @@ function initScrollAnimations() {
   });
 }
 
-// Initialize scroll animations after page load
 window.addEventListener('load', initScrollAnimations);
