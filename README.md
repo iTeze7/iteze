@@ -7,8 +7,6 @@ Bem-vindo ao repositório do meu portfólio profissional! Este site foi desenvol
 🚀 Sobre mim
 Sou estudante de **Ciência da Computação (3º semestre)** e trabalho criando soluções modernas como:
 - Desenvolvimento de sites e landing pages
-- Automações em Python
-- Web scraping básico
 - Correções e melhorias em sites
 - Pequenas integrações e formulários
 
@@ -52,7 +50,7 @@ Se quiser falar comigo para freelas, propostas ou dúvidas:
 
 ---
 
-⭐ Como contribuir
+⭐ Como contribuir:
 Este é um projeto pessoal — mas sugestões são sempre bem-vindas! Basta abrir um **Issue** no repositório.
 
 ---
