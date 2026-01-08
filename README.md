@@ -20,8 +20,7 @@ Tenho foco em **agilidade, eficiência** e **entregas profissionais**, mesmo em 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Python**
-- **Bootstrap**
+- **Tailwindcss**
 - **Git & GitHub**
 
 ---
